@@ -27,6 +27,31 @@
   margin--buttom: 30px;
   }
   </style>
+  <form id="myForm">
+    <p>
+    <lable for="username">ชื่อผู้ใช้:</lable><br>
+    <input type="text" id="username" name="username"><br><br>
+    </p>
+    <p>
+      <lable for="email">อีเมล์</lable><br>
+      <input type="email" id="email" name="email"><br><br>
+    </p>
+    <p>
+      <lable foe="password">password</lable><br>
+      <input tpye="password" id="password" name="passwaord"><br><br>
+    </p>
+    <p>
+      <input type="submit" value="ส่งข้อมูล">
+  </form>
+ <const form="document.gerElementById('myForm'p;>
+  <form.addEventListener('submit',function(event)> {
+  <event.preventDefault();>
+  <const username="douument.getElementById"('username').value;>
+  <const email="document.getElementById"(Email').value;>
+  <console.log('ชื่อผู้ใช้:',username);>
+  <console.log('อีเมล์:' ,email);>
+  <alert('บันทึกข้อมูลเรียบร้อยแล้ว!'):>
+    </p>
   </head>
   <body>
   
