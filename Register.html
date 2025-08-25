@@ -1,64 +1,104 @@
-<!doctype html>
-<html lang="th"
+<!DOCTYPE html>
+<html lang="th">
 <head>
-  <meta charset$"UFT-8">
-  <meta name="viewport" content="width-divice-width, initian-scale="1">
-  <title>Register</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>สมัครสมาชิก</title>
   <link href="https://fonts.googleapis.com/css2?family=Prompt&display=swap" rel="stylesheet">
- <style>
- <body> {
- front-family: 'Prompt', sans-serif;
- margin: 0;
- padding: 0;
- background: linear-gradient(to right, #90EE90, #FFD700);
- color: #333;
- }
- .container {
- max-width: 800px;
- margin: 40px auto;
- background: transparent;
- padding: 30px;
- font-size: 67px;
- box-shadow: 0 0 10px rgba(0,0,0,0.1);
- }
- h1,h2 {
-  color: 007acc;
-  }
-  .section {
-  margin--buttom: 100px;
-  }
+  <style>
+    body {
+      font-family: 'Prompt', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #90EE90, #FFD700);
+      color: #333;
+    }
+    .container {
+      max-width: 600px;
+      margin: 50px auto;
+      background: rgba(255, 255, 255, 0.8);
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    }
+    h1 {
+      text-align: center;
+      color: #007acc;
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    input[type="submit"] {
+      background-color: #007acc;
+      color: white;
+      padding: 10px 20px;
+      margin-top: 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      width: 100%;
+      font-size: 16px;
+    }
+    input[type="submit"]:hover {
+      background-color: #005f99;
+    }
+    .back-button {
+      display: block;
+      margin: 30px auto 0;
+      background-color: yellow;
+      color: black;
+      padding: 10px;
+      width: 200px;
+      height: 50px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-align: center;
+    }
   </style>
-  <form id="myForm">
-    <p>
-    <lable for="username">ชื่อผู้ใช้:</lable><br>
-    <input type="text" id="username" name="username"><br><br>
-    </p>
-    <p>
-      <lable for="email">อีเมล์</lable><br>
-      <input type="email" id="email" name="email"><br><br>
-    </p>
-    <p>
-      <lable for="password">password</lable><br>
-      <input tpye="password" id="password" name="passwaord"><br><br>
-    </p>
-    <p>
-      <lable for="password">ยืนยัน password</lable><br>
-      <input type="password" id="ยืนยัน password" name="ยืนยัน password"><br><br>
-    </p>
-    <p>
+</head>
+<body>
+  <div class="container">
+    <h1>สมัครสมาชิก</h1>
+    <form id="myForm">
+      <label for="username">ชื่อผู้ใช้:</label>
+      <input type="text" id="username" name="username" required>
+
+      <label for="email">อีเมล:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="password">รหัสผ่าน:</label>
+      <input type="password" id="password" name="password" required>
+
+      <label for="confirmPassword">ยืนยันรหัสผ่าน:</label>
+      <input type="password" id="confirmPassword" name="confirmPassword" required>
+
       <input type="submit" value="ส่งข้อมูล">
-  </form>
- <const form="document.gerElementById('myForm'p;>
-  <form.addEventListener('submit',function(event)> {
-  <event.preventDefault();>
-  <const username="douument.getElementById"('username').value;>
-  <const email="document.getElementById"(Email').value;>
-  <console.log('ชื่อผู้ใช้:',username);>
-  <console.log('อีเมล์:' ,email);>
-  <alert('บันทึกข้อมูลเรียบร้อยแล้ว!'):>
-    </p>
-    <a href="index.html">
-      <button style="background-color: yellow;" style="width: 200px; heigth: 200px;">กลับไปหน้าแรก</button>
-  </head>
-  <body>
-  
+    </form>
+
+    <button class="back-button" onclick="location.href='index.html'">กลับไปหน้าแรก</button>
+  </div>
+
+  <script>
+    document.getElementById('myForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+      const username = document.getElementById('username').value;
+      const email = document.getElementById('email').value;
+      alert('บันทึกข้อมูลเรียบร้อยแล้ว!\\nชื่อผู้ใช้: ' + username + '\\nอีเมล: ' + email);
+    });
+  </script>
+</body>
+</html>
+
