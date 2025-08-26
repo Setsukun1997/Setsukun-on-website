@@ -27,6 +27,16 @@
       font-size: 1.2em;
       animation: fadeInUp 1.5s ease-out;
     }
+    @keyframes spin {
+  0%   { transform: rotate(0deg); }
+  50%  { transform: rotate(15deg); }
+  100% { transform: rotate(-15deg); }
+}
+
+.rotating {
+  animation: spin 2s infinite ease-in-out;
+}
+<img src="background.jpg" class="rotating" style="width: 150px; margin-top: 20px:>
     button {
       margin-top: 20px;
       padding: 12px 24px;
@@ -53,5 +63,6 @@
   <button onclick="window.location.href='home.html'">เข้าสู่เว็บไซต์</button>
 </body>
 </html>
+
 
 
