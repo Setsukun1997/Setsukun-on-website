@@ -1,9 +1,9 @@
-window.addEventlistener("DOMContentLoaded", () => {
-  const goHomeBtn = document.getElementById("goHomeBtn");
-  if (goHomeBtn) {
-   goHomeBtn.addEventlistener("click", () => {
-   window.location.href = "home.html";
-   if (window.location.pathname.includes("index.html")) {
-   });
-  }
+window.addEventListener("DOMContentLoaded", () => {
+    const goHome = document.getElementById("goHome");
+    if (goHome) {
+        goHome.addEventListener("click", () => {
+            window.location.href = "home.html"; // พาไปหน้า home.html
+        });
+    }
+});
 });
