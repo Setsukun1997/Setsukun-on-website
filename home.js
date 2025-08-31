@@ -3,15 +3,23 @@ window.addEventListener("DOMContentLoaded", () => {
   if (gotoResumeBtn) {
     gotoResumeBtn.addEventListener("click", () => {
       window.location.href = "Resume.html";
-window.addEventListener("DOMContentLoaded", ()=> {
+    });
+  }
+
   const gotomyFacebookBtn = document.getElementById("gotomyFacebookBtn");
   if (gotomyFacebookBtn) {
-    gotomyFacebookBtn.addEventListener('click", () => {
-window.addEventListener(DOMContentLoaded", () => {
-  const gotomyYoutubeBtn = document.getElementById("gotomyyoutubeBtn");
-  if (gotomyYoutubeBtn) {
-    gotomYoutubeBtn.addEventListener("click", () => {
+    gotomyFacebookBtn.addEventListener("click", () => {
+      window.open("https://web.facebook.com/SetsukinoZRaisenz", "_blank");
+    });
+  }
 
+  const gotomyYoutubeBtn = document.getElementById("gotomyYoutubeBtn");
+  if (gotomyYoutubeBtn) {
+    gotomyYoutubeBtn.addEventListener("click", () => {
+      window.open("https://www.youtube.com/@setsukinoraisenz4199", "_blank");
     });
   }
 });
+
+
+
