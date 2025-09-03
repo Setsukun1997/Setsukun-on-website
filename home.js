@@ -37,6 +37,12 @@ function login() {
     hideLoginPopup();
   } else {
     alert("ชื่อผู้ใช้หรือรหัสผ่านไม่ถูกต้อง");
-  }
+    const closePopupBtn = document.getElementById("closePopupBtn");
+   if (closePopupBtn) {
+     closePopupBtn.addEventListener("click",hideloginPopup);
+   }
+  });
+   }
 }
+
 
