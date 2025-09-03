@@ -17,7 +17,12 @@ window.addEventListener("DOMContentLoaded", () => {
   if (gotomyYoutubeBtn) {
     gotomyYoutubeBtn.addEventListener("click", () => {
       window.open("https://www.youtube.com/@setsukinoraisenz4199", "_blank");
-   function showLoginPopup() {
+    });
+  }
+});
+
+// ✅ ฟังก์ชันควรอยู่ตรงนี้ นอก event listener
+function showLoginPopup() {
   document.getElementById("loginPopup").style.display = "flex";
 }
 
@@ -34,13 +39,5 @@ function login() {
     hideLoginPopup();
   } else {
     alert("ชื่อผู้ใช้หรือรหัสผ่านไม่ถูกต้อง");
-}
-
-    });
   }
-});
-
-
-
-
-
+}
