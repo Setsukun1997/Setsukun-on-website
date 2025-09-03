@@ -17,9 +17,30 @@ window.addEventListener("DOMContentLoaded", () => {
   if (gotomyYoutubeBtn) {
     gotomyYoutubeBtn.addEventListener("click", () => {
       window.open("https://www.youtube.com/@setsukinoraisenz4199", "_blank");
+   function showLoginPopup() {
+  document.getElementById("loginPopup").style.display = "flex";
+}
+
+function hideLoginPopup() {
+  document.getElementById("loginPopup").style.display = "none";
+}
+
+function login() {
+  const username = document.getElementById("username").value;
+  const password = document.getElementById("password").value;
+
+  if (username === "admin" && password === "1234") {
+    alert("เข้าสู่ระบบสำเร็จ!");
+    hideLoginPopup();
+  } else {
+    alert("ชื่อผู้ใช้หรือรหัสผ่านไม่ถูกต้อง");
+  }
+}
+
     });
   }
 });
+
 
 
 
