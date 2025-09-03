@@ -20,8 +20,6 @@ window.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
-
-// ✅ ฟังก์ชันควรอยู่ตรงนี้ นอก event listener
 function showLoginPopup() {
   document.getElementById("loginPopup").style.display = "flex";
 }
@@ -41,3 +39,4 @@ function login() {
     alert("ชื่อผู้ใช้หรือรหัสผ่านไม่ถูกต้อง");
   }
 }
+
