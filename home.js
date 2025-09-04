@@ -35,10 +35,15 @@ function login() {
   if (username === "admin" && password === "1234") {
     alert("เข้าสู่ระบบสำเร็จ!");
     hideLoginPopup();
+    button.closeBtn:hover {
+  color: red;
+  transform: scale(1.2);
+}
   } else {
     alert("ชื่อผู้ใช้หรือรหัสผ่านไม่ถูกต้อง");
   }
 }
+
 
 
 
