@@ -138,11 +138,29 @@
       color: white; padding: 10px; border: none; border-radius: 6px;">
       เข้าสู่ระบบ
     </button>
+    <script>
+  function showLoginPopup() {
+    document.getElementById("loginPopup").style.display = "flex";
+  }
+
+  function hideLoginPopup() {
+    document.getElementById("loginPopup").style.display = "none";
+  }
+
+  function login() {
+    const username = document.getElementById("username").value;
+    const password = document.getElementById("password").value;
+    alert("กำลังเข้าสู่ระบบด้วยชื่อผู้ใช้: " + username);
+    hideLoginPopup();
+  }
+</script>
+
   </div>
 </div>
 <script src="home.js"></script>
 </body>
  </html>
+
 
 
 
