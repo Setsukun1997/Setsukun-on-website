@@ -87,10 +87,7 @@
 
       <input type="submit" value="ส่งข้อมูล">
     </form>
-
-    <button class="back-button" onclick="location.href='home.html'">กลับไปหน้าแรก</button>
   </div>
-
   <script>
     document.getElementById('myForm').addEventListener('submit', function(event) {
       event.preventDefault();
@@ -99,6 +96,8 @@
       alert('บันทึกข้อมูลเรียบร้อยแล้ว!\\nชื่อผู้ใช้: ' + username + '\\nอีเมล: ' + email);
     });
   </script>
+  <button class="button" id="goHomeBtn">กลับหน้าหลัก</button>
+  <script src="regiter.js"></script>
 </body>
 </html>
 
