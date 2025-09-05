@@ -54,19 +54,22 @@
       background-color: #005f99;
     }
     .back-button {
-      display: block;
-      margin: 30px auto 0;
-      background-color: yellow;
-      color: black;
-      padding: 10px;
-      width: 200px;
-      height: 50px;
-      font-size: 16px;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      text-align: center;
-    }
+  display: block;
+  margin: 30px auto 0;
+  background-color: #007acc; 
+  color: white;
+  padding: 10px;
+  width: 100%;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+.back-button:hover {
+  background-color: #005f99; 
+}
+
   </style>
 </head>
 <body>
@@ -87,8 +90,7 @@
 
       <input type="submit" value="ส่งข้อมูล">
     </form>
-    <button class="submit-button" id="gohomeBtn">กลับหน้าหลัก</button>
-
+    <button class="back-button" id="gohomeBtn">กลับหน้าหลัก</button>
   <script>
     document.getElementById('myForm').addEventListener('submit', function(event) {
       event.preventDefault();
