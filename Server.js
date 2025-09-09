@@ -1,0 +1,20 @@
+const express = require('express');
+const cors = require('cors');
+const app = express();
+
+app.use(cors());
+app.use(express.json());
+
+app.get('/api/data', (req, res) => {
+  res.json({ message: 'hello from server!' });
+});
+
+app.post('/api/data', (req, res) => {
+  const { name } = req.body;
+  res.json({ message: `Hello, ${name}!` });
+});
+
+app.listen(3000, () => {
+  console.log('Server running on http://localhost:3000');
+});
+
