@@ -5,8 +5,8 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-app.get('/api/data', (req, res) => {
-  res.json({ message: 'hello from server!' });
+app.get('/', (req, res) => {
+  res.sendFile(__dirname + '/index.html');
 });
 
 app.post('/api/data', (req, res) => {
@@ -17,6 +17,7 @@ app.post('/api/data', (req, res) => {
 app.listen(3000, () => {
   console.log('Server running on https://setsukun-on-website.onrender.com');
 });
+
 
 
 
