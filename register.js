@@ -1,11 +1,12 @@
 window.addEventListener("DOMContentLoaded", () => {
-  const gohomeBtn = document.getElementById("gohomeBtn");
-  if (gohomeBtn) {
-    gohomeBtn.addEventListener("click", () => {
-      window.location.href = "home.html"; 
+  const goindexBtn = document.getElementById("goindexBtn");
+  if (goindexBtn) {
+    goindexBtn.addEventListener("click", () => {
+      window.location.href = "index.html"; 
     });
   }
 });
+
 
 
 
