@@ -72,7 +72,7 @@
   </button>
   </div>
 <div id="loginPopup">
-  <script>
+ <script>
   function showLoginPopup() {
     document.getElementById("loginPopup").style.display = "flex";
   }
@@ -84,8 +84,11 @@
   function login() {
     const username = document.getElementById("username").value;
     const password = document.getElementById("password").value;
+
     alert("เข้าสู่ระบบด้วยชื่อผู้ใช้: " + username);
+
     hideLoginPopup();
+    window.location.href = "home.html";
   }
 </script>
 
@@ -99,6 +102,7 @@
  <script src="Main.js"></script>
 </body>
 </html>
+
 
 
 
