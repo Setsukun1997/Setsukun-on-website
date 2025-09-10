@@ -71,19 +71,24 @@
   เข้าสู่ระบบ
   </button>
   </div>
-<div id="loginPopup" style="
-  display: none;
-  position: fixed;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  background-color: rgba(0,0,0,0.8);
-  justify-content: center;
-  align-items: center;
-  z-index: 999;
-  flex-direction: column;
-  color: white;
-  font-family: 'Kanit', sans-serif;
-">
+<div id="loginPopup">
+  <script>
+  function showLoginPopup() {
+    document.getElementById("loginPopup").style.display = "flex";
+  }
+
+  function hideLoginPopup() {
+    document.getElementById("loginPopup").style.display = "none";
+  }
+
+  function login() {
+    const username = document.getElementById("username").value;
+    const password = document.getElementById("password").value;
+    alert("เข้าสู่ระบบด้วยชื่อผู้ใช้: " + username);
+    hideLoginPopup();
+  }
+</script>
+
   <h2>เข้าสู่ระบบ</h2>
   <input id="username" placeholder="ชื่อผู้ใช้" style="padding: 10px; margin: 10px;">
   <input id="password" type="password" placeholder="รหัสผ่าน" style="padding: 10px; margin: 10px;">
@@ -91,9 +96,10 @@
   <button onclick="hideLoginPopup()" style="margin-top: 10px;">ปิด</button>
 </div>
 
- <script src="ain.js"></script>
+ <script src="Main.js"></script>
 </body>
 </html>
+
 
 
 
