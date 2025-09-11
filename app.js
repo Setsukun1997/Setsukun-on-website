@@ -1,21 +1,45 @@
-import { useEffect, useState } from 'react';
-import './App.css';
+import { useState } from "react";
+import "./styles.css";
 
-function App() {
-  const [message, setMessage] = useState('');
+export default function App() {
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
 
-  useEffect(() => {
-    fetch('http://localhost:3001/api/message')
-      .then(res => res.json())
-      .then(data => setMessage(data.message));
-  }, []);
+  const handleLogin = async () => {
+    const res = await fetch(
+      "https://setsukun-on-website.onrender.com/api/login",
+      {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ username, password }),
+      }
+    );
+    const data = await res.json();
+    if (data.success) {
+      alert("เข้าสู่ระบบสำเร็จ");
+    } else {
+      alert("รหัสผิด");
+    }
+  };
 
   return (
     <div className="App">
-      <h1>React เชื่อม Node.js</h1>
-      <p>{message}</p>
+      <h1>เข้าสู่ระบบ</h1>
+      <input
+        type="text"
+        placeholder="Username"
+        value={username}
+        onChange={(e) => setUsername(e.target.value)}
+      />
+      <input
+        type="password"
+        placeholder="Password"
+        value={password}
+        onChange={(e) => setPassword(e.target.value)}
+      />
+      <button onClick={handleLogin}>Login</button>
     </div>
   );
 }
 
-export default App;
+
