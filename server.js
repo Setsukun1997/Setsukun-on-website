@@ -12,18 +12,17 @@ const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
-app.use(express.json()); // ต้องมีเพื่ออ่าน req.body
+app.use(express.json());
 
 app.post('/api/login', (req, res) => {
   const { username, password } = req.body;
-
-  // ตัวอย่างตรวจสอบแบบง่าย
   if (username === 'admin' && password === '1234') {
     res.json({ success: true });
   } else {
     res.json({ success: false, message: 'รหัสผิด' });
   }
 });
+
 
 
 
