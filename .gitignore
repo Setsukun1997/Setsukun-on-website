@@ -1,2 +1,1 @@
 .env
-MONGO_URI=mongodb+srv://Setsukino:Pr0939106716@cluster0.mongodb.net/Suthat?retryWrites=true&w=majority
