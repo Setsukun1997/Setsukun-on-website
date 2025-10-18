@@ -4,12 +4,13 @@
   "description": "Simple Express backend ready for Render deployment",
   "main": "backend/server.js",
   "scripts": {
-    "start": "node backend/server.js",
+    "start": "node server.js",
     "build": "echo 'No build step needed for backend'"
   },
   "dependencies": {
-    "express": "^4.18.2",
-    "cors": "^2.8.5"
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^4.18.2"
   },
   "engines": {
     "node": ">=14"
