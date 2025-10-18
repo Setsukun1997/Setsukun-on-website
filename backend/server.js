@@ -17,6 +17,9 @@ app.use('/api/timeline', timelineRoutes);
 app.use('/api/auth', authRoutes);
 app.use('/api/message', messageRoutes);
 
+app.get('/', (req, res) => {
+  res.send('Welcome to Setsukun-on-website backend!');
+});
 
 mongoose.connect(process.env.MONGO_URI, {
   useNewUrlParser: true,
@@ -34,6 +37,7 @@ const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
   console.log(`🚀 Server running on port ${PORT}`);
 });
+
 
 
 
