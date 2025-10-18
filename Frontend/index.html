@@ -1,132 +1,25 @@
 <!DOCTYPE html>
-<html lang="th">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ยินดีต้อนรับ</title>
-  <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Kanit', sans-serif;
-      background: linear-gradient(135deg, #00bcd4, #8e24aa);
-      color: white;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      text-align: center;
-    }
-    h1 {
-      font-size: 2.5em;
-      margin-bottom: 10px;
-      animation: fadeInUp 1s ease-out;
-    }
-    p {
-      font-size: 1.2em;
-      animation: fadeInUp 1.5s ease-out;
-    }
-    @keyframes spin {
-  0%   { transform: rotate(0deg); }
-  50%  { transform: rotate(15deg); }
-  100% { transform: rotate(-15deg); }
-}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Setsukun Website</title>
 
-.rotating {
-  animation: spin 2s infinite ease-in-out;
-}
-    button {
-      margin-top: 20px;
-      padding: 12px 24px;
-      font-size: 18px;
-      background-color: #ffffff;
-      color: #8e24aa;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-      transition: 0.3s;
-    }
-    button:hover {
-      background-color: #f3e5f5;
-    }
-    @keyframes fadeInUp {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-  </style>
-</head>
-<body>
-  <h1>ยินดีต้อนรับสู่เว็บไซต์ของสุทัศน์</h1>
-  <div>
-    <script src="home.js"></script>
-<script src="api-test.js"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet" />
 
-<a href="Register.html">
-<button style="background-color: orange; color: white; border: none; border-radius: 8px; padding: 12px 24px; font-size: 18px; box-shadow: 0 4px 6px rgba(0,0,0,0.2);">
-  ลงทะเบียน
-</button>
-  </a>
-   <button onclick="showLoginPopup()" style="
-  background-color: purple;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  padding: 12px 24px;
-  font-size: 18px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
-">
-  เข้าสู่ระบบ
-</button>
-  </div>
-<div id="loginPopup" style="
-  display: none;
-  position: fixed;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  background-color: rgba(0,0,0,0.8);
-  z-index: 999;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  color: white;
-  font-family: 'Kanit', sans-serif;
-">
- <script>
-  function showLoginPopup() {
-    document.getElementById("loginPopup").style.display = "flex";
-  }
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 
-  function hideLoginPopup() {
-    document.getElementById("loginPopup").style.display = "none";
-  }
+    <!-- Meta Tags -->
+    <meta name="description" content="Setsukun - A developer's journey from zero to legend." />
+    <meta name="author" content="Suthat" />
+    <meta name="theme-color" content="#00204d" />
+  </head>
+  <body>
+    <div id="root"></div>
 
-  function login() {
-    const username = document.getElementById("username").value;
-    const password = document.getElementById("password").value;
-
-    alert("เข้าสู่ระบบด้วยชื่อผู้ใช้: " + username);
-
-    hideLoginPopup();
-    window.location.href = "home.html";
-  }
-</script>
-
-  <h2>เข้าสู่ระบบ</h2>
-  <input id="username" placeholder="ชื่อผู้ใช้" style="padding: 10px; margin: 10px;">
-  <input id="password" type="password" placeholder="รหัสผ่าน" style="padding: 10px; margin: 10px;">
-  <button onclick="login()" style="background-color: #4caf50; color: white;">เข้าสู่ระบบ</button>
-  <button onclick="hideLoginPopup()" style="margin-top: 10px;">ปิด</button>
-</div>
-
- <script src="Main.js"></script>
-</body>
-</html>
-
-
-
-
-
-
-
-
+    <!-- Vite injects React here -->
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>	
