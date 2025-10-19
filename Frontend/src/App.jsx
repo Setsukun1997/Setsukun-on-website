@@ -1,12 +1,17 @@
-import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import Home from './pages/Home.jsx';
+import Login from './pages/Login.jsx';
+import Register from './pages/Register.jsx';
 
 function App() {
   return (
-    <div className="container">
-      <h1>ยินดีต้อนรับสู่ Setsukun Website 👋</h1>
-      <p>นี่คือจุดเริ่มต้นของตำนานนักพัฒนามือถือคนแรก!</p>
-    </div>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/login" element={<Login />} />
+      <Route path="/register" element={<Register />} />
+    </Routes>
   );
 }
 
 export default App;
+
