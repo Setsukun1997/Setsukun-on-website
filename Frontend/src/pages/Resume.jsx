@@ -1,157 +1,79 @@
-<!DOCTYPE html>
-<html lang="th">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Resume - สุทัศน์ ปัญญาสิริสุนทร</title>
-  <link href="https://fonts.googleapis.com/css2?family=Prompt&display=swap" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Prompt', sans-serif;
-      margin: 0;
-      padding: 0;
-      background: linear-gradient(to right, #f0f8ff, #e6ffe6);
-      color: #333;
-    }
-    .container {
-      max-width: 900px;
-      margin: 40px auto;
-      background: white;
-      padding: 30px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.1);
-      border-radius: 10px;
-    }
-    .header {
-      text-align: center;
-      margin-bottom: 30px;
-    }
-    .header h1 {
-      margin: 0;
-      font-size: 2.2em;
-      color: #007acc;
-    }
-    .header p {
-      margin: 5px 0;
-      font-size: 1.1em;
-    }
-    .section {
-      margin-bottom: 30px;
-    }
-    .section h2 {
-      color: #007acc;
-      border-bottom: 2px solid #007acc;
-      padding-bottom: 5px;
-      margin-bottom: 15px;
-    }
-    .skills span {
-      display: inline-block;
-      background: #007acc;
-      color: white;
-      padding: 6px 12px;
-      margin: 5px;
-      border-radius: 20px;
-      font-size: 0.95em;
-    }
-    ul {
-      padding-left: 20px;
-    }
-    ul li {
-      margin-bottom: 10px;
-    }
-    .contact a {
-      color: #007acc;
-      text-decoration: none;
-    }
-    .back-btn {
-      display: block;
-      text-align: center;
-      margin-top: 40px;
-    }
-    .back-btn button {
-      padding: 10px 20px;
-      font-size: 16px;
-      background-color: #007acc;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-    }
-    .back-btn button:hover {
-      background-color: #005f99;
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <div class="header">
-      <h1>สุทัศน์ ปัญญาสิริสุนทร</h1>
-      <p><h1>Suthat Punyasirisoonthorn</h1></p>
-      <p>Junior Web Developer | YouTuber </p>
-      <p class="contact">
-        📧 suthat12308@gmail.com | 📞 093-910-6716 | 💻 
-        <a href="https://github.com/Setsukun1997" target="_blank">GitHub</a>
-      </p>
-    </div>
+import './Resume.css'; 
 
-    <div class="section">
-  <h2>เกี่ยวกับฉัน</h2>
-  <img src="myprofile.jpg" alt="รูปโปรไฟล์ของสุทัศน์" style="width:150px; float:right; margin-left:20px; border-radius:50%;">
-  <p>นักพัฒนาเว็บไซต์ที่มีความเชี่ยวชาญด้าน HTML, CSS, JavaScript และสามารถ deploy เว็บไซต์จริงผ่าน GitHub Pages ได้...</p>
-</div>
+function Resume() {
+  return (
+    <div className="container">
+      <div className="header">
+        <h1>สุทัศน์ ปัญญาสิริสุนทร</h1>
+        <h2>Suthat Punyasirisoonthorn</h2>
+        <p>Junior Web Developer | YouTuber</p>
+        <p className="contact">
+          📧 tety12308@hotmail.com | 📞 093-910-6716 | 💻{' '}
+          <a href="https://github.com/Setsukun1997" target="_blank" rel="noopener noreferrer">
+            GitHub
+          </a>
+        </p>
+      </div>
+      
+      <div className="section">
+        <h2>เกี่ยวกับฉัน</h2>
+        <img
+          src="/assets/image/myprofile.jpg"
+          alt="รูปโปรไฟล์ของสุทัศน์"
+          style={{ width: '150px', float: 'right', marginLeft: '20px', borderRadius: '50%' }}
+        />
+        <p>
+          นักพัฒนาเว็บไซต์ที่มีความเชี่ยวชาญด้าน HTML, CSS, JavaScript และสามารถ deploy เว็บไซต์จริงผ่าน GitHub Pages ได้
+          มีความสามารถในการแก้ไขปัญหาโค้ดและออกแบบ UI/UX ให้เหมาะกับผู้ใช้งาน พร้อมเรียนรู้ backend เพื่อพัฒนาเป็น Full Stack Developer
+        </p>
+      </div>
 
-      <p>นักพัฒนาเว็บไซต์ที่มีความเชี่ยวชาญด้าน HTML, CSS, JavaScript และสามารถ deploy เว็บไซต์จริงผ่าน GitHub Pages ได้ มีความสามารถในการแก้ไขปัญหาโค้ดและออกแบบ UI/UX ให้เหมาะกับผู้ใช้งาน พร้อมเรียนรู้ backend เพื่อพัฒนาเป็น Full Stack Developer</p>
-    </div>
+      <div className="section">
+        <h2>ทักษะ</h2>
+        <div className="skills">
+          {[
+            'HTML',
+            'CSS',
+            'JavaScript',
+            'GitHub Pages',
+            'Responsive Design',
+            'Microsoft Office',
+            'Node.js ',
+            'PHP ',
+          ].map((skill) => (
+            <span key={skill}>{skill}</span>
+          ))}
+        </div>
+      </div>
+      <div className="section">
+        <h2>ประสบการณ์ด้านเว็บ</h2>
+        <ul>
+          <li>สร้างเว็บไซต์ส่วนตัวแบบ multi-page ด้วย HTML/CSS และฝัง YouTube, QR Code ด้วย JavaScript</li>
+          <li>ปรับแต่ง layout ให้ responsive ทั้งบนมือถือและ desktop</li>
+          <li>แก้ไขโค้ดให้แสดงผลได้จริงและ deploy ผ่าน GitHub Pages</li>
+          <li>ทดลองใช้ backend เบื้องต้นเพื่อเตรียมพัฒนา full stack</li>
+        </ul>
+      </div>
+      <div className="section">
+        <h2>การศึกษา</h2>
+        <ul>
+          <li>2015 - 2017: ปวช. สาขาคอมพิวเตอร์ธุรกิจ (เกรดเฉลี่ย 3.80)</li>
+          <li>2018 - 2019: ปวส. สาขาคอมพิวเตอร์ธุรกิจ (เกรดเฉลี่ย 3.08)</li>
+        </ul>
+      </div>
 
-    <div class="section">
-      <h2>ทักษะ</h2>
-      <div class="skills">
-        <span>HTML</span>
-        <span>CSS</span>
-        <span>JavaScript</span>
-        <span>GitHub Pages</span>
-        <span>Responsive Design</span>
-        <span>Microsoft Office</span>
-        <span>Node.js (กำลังเรียนรู้)</span>
-        <span>Python (กำลังเรียนรู้)</span>
-        <span>PHP (กำลังเรียนรู้)</span>
+      <div className="section">
+        <h2>ประวัติการทำงาน</h2>
+        <ul>
+          <li>2016 - 2025 (ครึ่งปีแรก): พนักงานครัว MK Restaurant — เรียนรู้การทำงานเป็นทีมและความรับผิดชอบ</li>
+          <li>2025 (ครึ่งปีหลัง - ปัจจุบัน): พนักงานคีย์ข้อมูล GEMINI Creation — ดูแลการปริ้นโมเดล 3D สำหรับผลิตเครื่องประดับ</li>
+        </ul>
+      </div>
+      <div className="back-btn">
+        <button onClick={() => window.location.href = '/'}>กลับหน้าหลัก</button>
       </div>
     </div>
+  );
+}
 
-    <div class="section">
-      <h2>ประสบการณ์ด้านเว็บ</h2>
-      <ul>
-        <li>สร้างเว็บไซต์ส่วนตัวแบบ multi-page ด้วย HTML/CSS และฝัง YouTube, QR Code ด้วย JavaScript</li>
-        <li>ปรับแต่ง layout ให้ responsive ทั้งบนมือถือและ desktop</li>
-        <li>แก้ไขโค้ดให้แสดงผลได้จริงและ deploy ผ่าน GitHub Pages</li>
-        <li>ทดลองใช้ backend เบื้องต้นเพื่อเตรียมพัฒนา full stack</li>
-      </ul>
-    </div>
-
-    <div class="section">
-      <h2>การศึกษา</h2>
-      <ul>
-        <li>2015 - 2017: ปวช. สาขาคอมพิวเตอร์ธุรกิจ (เกรดเฉลี่ย 3.80)</li>
-        <li>2018 - 2019: ปวส. สาขาคอมพิวเตอร์ธุรกิจ (เกรดเฉลี่ย 3.08)</li>
-      </ul>
-    </div>
-
-    <div class="section">
-      <h2>ประวัติการทำงาน</h2>
-      <ul>
-        <li>2016 - 2025 (ครึ่งปีแรก): พนักงานครัว MK Restaurant — เรียนรู้การทำงานเป็นทีมและความรับผิดชอบ</li>
-        <li>2025 (ครึ่งปีหลัง - ปัจจุบัน): พนักงานคีย์ข้อมูล GEMINI Creation — ดูแลการปริ้นโมเดล 3D สำหรับผลิตเครื่องประดับ</li>
-      </ul>
-    </div>
-
-    <div class="back-btn">
-      <a href="home.html"><button>กลับไปยังหน้าแรก</button></a>
-    </div>
-  </div>
-</body>
-</html>
-
-
-
-
-
+export default Resume;
