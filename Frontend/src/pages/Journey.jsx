@@ -1,46 +1,54 @@
-function Journey() {
-  const BASE_URL = "https://setsukun-on-website.onrender.com/api";
+import React from "react";
 
+const Journey = () => {
   return (
-    <div className="journey">
-      <h1>เส้นทางของ Setsukun</h1>
-      <p>นี่คือเรื่องราวการเดินทางจากศูนย์สู่นักพัฒนา</p>
-      <section>
-        <h2> อุปกรณ์ในการเรียนรู้ที่ใช้เป็นหลัก </h2> <br />
-        <ul>
-          <li> Acode (Mobile App) </li> <br />
-          <li> Termux (Mobile App) </li> <br />
-          <li> Github (Mobile App & Website) </li> <br />
-          <li> AI Copilot </li> <br />
-          <li> AI Gemini </li> <br />
-          <li> MongoDB Atlas (Website) </li> <br />
-          <li> MarieDB & MySQL </li> <br />
-</ul>
-            </section>
-            <setion>
-      <h3>June 2025</h3> <br />
-     <ul> <li> สัปดาห์ที่ 1 -2 </li> <br /> </ul>
-      เริ่มต้นเรียนรู้การเขียนเว็บไซต์ด้วยตัวเอง โดยใช้ Acode (mobile App) ในการเขียนโค้ด โดยเป็นเว็บไซต์ที่สามารถใช้งานได้จริง ภาษา JavaScript  โดยใช้พื้นฐานจากภาษา HTML และ CSS เข้ามาช่วยด้วย ผนวกกับการเรียนรู้และใช้ AI ในการตรวจสอบโค้ดที่เขียน โดยโค้ดแรกที่เขียนออกมาชื่อ Setsukun-on-website ใช้เพื่อเรียนรู้ในตอนแรกและพัฒนาต่อมาเรื่อยๆ<br />
-       <ul> <li> สัปดาห์ที่ 3 - 5 </li> <br /> </ul>
-      เรียนรู้การใช้ที่เก็บข้อมูลโค้ดแบบ online โดยใช้โปรแกรมเว็บไซต์ที่ชื่อว่า Github และการสร้าง Repositories ในการเก็บข้อมูลในแต่ล่ะไฟล์ของ Setsukun-on-website <br />
-      <h3> July 2025 </h3> <br />
-      <ul> <li> สัปดาห์ที่ 1 - 3 </li><br /> </ul>
-      เริ่มเรียนรู้การแยกหน้าที่ของนักพัฒนาเว็บไซต์อย่าง Frontend Backend และ Full stact Developer ว่าในแต่ล่ะตำแหน่งมีหน้าที่ทำอะไรอย่างไรบ้างและดูแลส่วนไหนบ้างของเว็บไซต์ และทำการแยกโค้ดที่เขียนไว้ออกเป็นสองฝั่ง ทั้ง Fronten และ Backend <br />
-      <ul> <li> สัปดาห์ที่ 4 - 5 </li><br /> </ul>
-      เขียนโค้ดเว็บไซต์ขึ้นมาใหม่โดยใช้หลักการแยก Frontend และ Backenf ออกจากกัน และได้เขียนออกมาเป็นการคำนาณค่าใช้จ่ายในแบบง่ายๆ โดยมีชื่อ Repositories ว่า Project-Portfolio <br />
-      <h3> August 2025 </h3> <br />
-       <ul> <li> สัปดาห์ที่ 1 - 2 </li> <br /> </ul>
-          เรียนรู้การสร้างฐานข้อมูลโดยใช้เว็บไซต์ที่ชื่อว่า MongoDB Atlas เป็นที่เก็บฐานข้อมูล และเรียนรู้การใช้เว็บไซต์ที่ชื่อว่า Render เป็นเว็บไซต์ที่ช่วยในการ Deploy เว็บไซต์ทั้ง Frontend และ Backend <br />
-       <ul> <li> สัปดาห์ที่ 3 - 4 </li> <br /> </ul>
-        เริ่มการ Deploy หน้าโค้ดที่อยู่ใน Repositories ใน github ทุก repo และได้เรียนรู้การ Error จากการ Deploy ที่มาจากโค้ดที่ผิดพลาด และแก้ไขสถานการณ์เฉพาะหน้า จนสามารถ Deploy Repositories Project-Portfoilo ได้สำเร็จ จนมีหน้าเว็บไซต์ที่มีที่อยู่ : https://setsukun1997.github.io/Project-Portfolio/ <br />
-        <h3> September 2025 </h3> <br />
-       <ul> <li> สัปดาห์ที่ 1 - 2 </li><br /> </ul>
-        เริ่มต้นการเรียนรู้ภาษาโค้ดใหม่ คือภาษา PHP ที่มีการใช้ภาษานี้เป็นภาษาในการเขียนของฝั่ง Backend มากที่สุด โดยภาษานี้จะมีความปลอดภัยที่สูงและเขียนง่ายรวมทั้งการใช้ตัวแปรและคำสั่งต่างๆของภาษา PHP <br />
-        <ul> <li> สีปดาห์ที่ 3 - 4 </li><br /> </ul>
-        เรียนรู้การใช้ฐานข้อมูลที่ใช้ร่วมกับภาษา PHP อย่าง MarieDB และ MySQL โดยใช้ Termux (Mobile App) ในการเชื่อมฐานข้อมูลอย่าง MySQL และการรันโปรเจคง่ายๆโดยมี Repositories ที่ชื่อว่า PHP กับ PHP Project โดยใช้ภาษา HTML และ CSS ในการใช้ร่วมกัน <br /> 
-   <section>
+    <div className="bg-gray-900 text-white min-h-screen py-12 px-6">
+      <div className="max-w-4xl mx-auto">
+        <h1 className="text-4xl font-bold text-center mb-10">เส้นทางของ Setsukun</h1>
+
+        <div className="space-y-10">
+          <section>
+            <h2 className="text-2xl font-semibold mb-2">จุดเริ่มต้น</h2>
+            <p className="text-gray-300">
+              เริ่มต้นจากมือถือเครื่องเดียว ใช้ Acode, Termux และ GitHub Mobile ในการเขียนโค้ดและ deploy เว็บจริง
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-semibold mb-2">เทคโนโลยีที่เรียนรู้</h2>
+            <ul className="list-disc list-inside text-gray-300 space-y-1">
+              <li>HTML, CSS, JavaScript</li>
+              <li>React + Vite, Node.js, Express.js</li>
+              <li>MongoDB, MySQL, REST API</li>
+              <li>GitHub, Netlify, Vercel, Render</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-semibold mb-2">ความสำเร็จล่าสุด</h2>
+            <ul className="list-disc list-inside text-gray-300 space-y-1">
+              <li>Deploy เว็บจริงบน Render แบบ static และ full-stack</li>
+              <li>แก้ทุก error ที่เจอด้วยความเข้าใจและความอดทน</li>
+              <li>สร้าง Resume หน้าเว็บที่บริษัทต้องจำชื่อ</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-semibold mb-2">เป้าหมายต่อไป</h2>
+            <p className="text-gray-300">
+              สร้างเว็บไซต์ที่เล่าเรื่องของนักพัฒนาที่เริ่มจากศูนย์ และกลายเป็นแรงบันดาลใจให้คนอื่นได้เริ่มต้นเหมือนกัน
+            </p>
+          </section>
         </div>
+
+        <div className="text-center mt-12">
+          <a href="/" className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-6 rounded">
+            กลับหน้าหลัก
+          </a>
+        </div>
+      </div>
+    </div>
   );
-}
+};
 
 export default Journey;
