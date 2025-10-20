@@ -1,5 +1,5 @@
 import './Resume.css'; 
-
+import { useNavigate } from 'react-router-dom';
 function Resume() {
   return (
     <div className="container">
@@ -17,9 +17,7 @@ function Resume() {
       
       <div className="section">
         <h2>เกี่ยวกับฉัน</h2>
-        <img
-          src="/assets/image/myprofile.jpg"
-          alt="รูปโปรไฟล์ของสุทัศน์"
+       <img src="/myprofile.jpg" alt="รูปโปรไฟล์ของสุทัศน์" 
           style={{ width: '150px', float: 'right', marginLeft: '20px', borderRadius: '50%' }}
         />
         <p>
@@ -70,10 +68,15 @@ function Resume() {
         </ul>
       </div>
       <div className="back-btn">
-        <button onClick={() => window.location.href = '/'}>กลับหน้าหลัก</button>
+       import { useNavigate } from 'react-router-dom';
+const navigate = useNavigate();
+
+<button onClick={() => navigate('/')}>กลับหน้าหลัก</button>
+
       </div>
     </div>
   );
 }
 
 export default Resume;
+
