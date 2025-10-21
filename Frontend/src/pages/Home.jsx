@@ -17,31 +17,68 @@ function Home() {
       <h1>ยินดีต้อนรับเข้าสู่ Website on Setsukinokun</h1>
       <p><b>ทดลองเขียนเว็บไซต์ด้วยภาษา HTML และ Javascript เพื่อนำไปต่อยอดในอนาคต</b></p>
 
-      <a href="/resume">
-        <button style={{ backgroundColor: '#7e57c2', color: 'white' }}>
-          <img src="/icon.jpg" alt="resume" style={{ height: '24px' }} />
-          ไปที่หน้าเกี่ยวกับเรา
-        </button>
-      </a>
+      import { Link } from 'react-router-dom';
 
-      <button onClick={() => setShowPopup(true)} style={{ backgroundColor: '#4caf50', color: 'white' }}>
-        <img src="/iconLine.png" alt="line" style={{ height: '24px' }} />
-        ติดต่อเรา
+const SocialButtons = () => {
+  const buttonStyle = {
+    display: 'flex',
+    alignItems: 'center',
+    padding: '10px 16px',
+    margin: '8px',
+    borderRadius: '8px',
+    border: 'none',
+    cursor: 'pointer',
+    fontSize: '16px',
+    color: 'white'
+  };
+
+  return (
+    <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center' }}>
+    
+      <button
+        onClick={() => window.open('https://www.facebook.com/SetsukinoZRaisenz', '_blank', 'noopener,noreferrer')}
+        style={{ ...buttonStyle, backgroundColor: '#1877F2' }}
+      >
+        <img src="/facebook.png" alt="Facebook" style={{ height: '24px', marginRight: '8px' }} />
+        Facebook
       </button>
 
-      <a href="https://www.facebook.com/SetsukinoZRaisenz" target="_blank" rel="noopener noreferrer">
-        <button style={{ backgroundColor: '#3b5998', color: 'white' }}>
-          <img src="/LogoFacebook.png" alt="Facebook" style={{ height: '30px' }} />
-          ไป Facebook ของเรา
-        </button>
-      </a>
+  
+      <button
+        onClick={() => window.open('https://www.youtube.com/@Setsukinokun', '_blank', 'noopener,noreferrer')}
+        style={{ ...buttonStyle, backgroundColor: '#FF0000' }}
+      >
+        <img src="/logoyoutube.png" alt="YouTube" style={{ height: '24px', marginRight: '8px' }} />
+        YouTube
+      </button>
 
-      <a href="https://www.youtube.com/@Setsukinokun" target="_blank" rel="noopener noreferrer">
-        <button style={{ backgroundColor: '#e53935', color: 'white' }}>
-          <img src="/logoyoutube.png" alt="YouTube" style={{ height: '30px', verticalAlign: 'middle', marginRight: '8px' }} />
-          ไปที่ Youtube ของเรา
+      <button
+        onClick={() => window.open('https://github.com/setsukun1997', '_blank', 'noopener,noreferrer')}
+        style={{ ...buttonStyle, backgroundColor: '#333' }}
+      >
+        <img src="/github.png" alt="GitHub" style={{ height: '24px', marginRight: '8px' }} />
+        GitHub
+      </button>
+
+      <button
+        onClick={() => window.open('https://line.me/ti/p/~setsukun', '_blank', 'noopener,noreferrer')}
+        style={{ ...buttonStyle, backgroundColor: '#00C300' }}
+      >
+        <img src="/line.png" alt="LINE" style={{ height: '24px', marginRight: '8px' }} />
+        LINE
+      </button>
+
+      <Link to="/resume">
+        <button style={{ ...buttonStyle, backgroundColor: '#6C63FF' }}>
+          <img src="/resume.png" alt="Resume" style={{ height: '24px', marginRight: '8px' }} />
+          Resume
         </button>
-      </a>
+      </Link>
+    </div>
+  );
+};
+
+export default SocialButtons;
 
       <h2>Video แนะนำช่อง Youtube ของเรา</h2>
       <iframe
