@@ -1,4 +1,5 @@
 import React from 'react';
+import './Resume.css';
 import { useNavigate } from 'react-router-dom';
 function Resume() {
   return (
@@ -54,61 +55,8 @@ function Resume() {
     </div>
   );
 }
-
-const styles = {
-  container: {
-    maxWidth: '800px',
-    margin: 'auto',
-    padding: '2rem',
-    fontFamily: 'sans-serif',
-    lineHeight: 1.6,
-    backgroundColor: '#fff',
-    color: '#333',
-  },
-  header: {
-    textAlign: 'center',
-    marginBottom: '2rem',
-  },
-  profileImage: {
-    width: '120px',
-    borderRadius: '50%',
-    marginBottom: '1rem',
-  },
-  name: {
-    fontSize: '2rem',
-    margin: 0,
-  },
-  title: {
-    fontSize: '1.2rem',
-    color: '#666',
-  },
-  section: {
-    marginBottom: '2rem',
-  },
-  sectionTitle: {
-    fontSize: '1.5rem',
-    borderBottom: '2px solid #eee',
-    paddingBottom: '0.5rem',
-    marginBottom: '1rem',
-  },
-  list: {
-    listStyle: 'none',
-    paddingLeft: 0,
-  },
-  footer: {
-    textAlign: 'center',
-    marginTop: '3rem',
-  },
-  backButton: {
-    padding: '10px 20px',
-    fontSize: '1rem',
-    backgroundColor: '#007bff',
-    color: '#fff',
-    border: 'none',
-    borderRadius: '8px',
-    cursor: 'pointer',
-  }
 };
 
 export default Resume;
+
 
