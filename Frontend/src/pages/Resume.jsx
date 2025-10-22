@@ -19,7 +19,7 @@ function Resume() {
         </p>
       </header>
 
-      <section className="section">
+      <section className="profile-section">
         <h2>เกี่ยวกับฉัน</h2>
         <img src="/myprofile.jpg" alt="รูปโปรไฟล์" className="profile-img/>
         <p>
@@ -75,5 +75,6 @@ function Resume() {
 }
 
 export default Resume;
+
 
 
