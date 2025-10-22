@@ -28,7 +28,7 @@ function Resume() {
         </p>
       </section>
 
-      <section className="section">
+      <section className="profile-section">
         <h2>ทักษะ</h2>
         <div className="skills">
           <span>HTML</span>
@@ -75,6 +75,7 @@ function Resume() {
 }
 
 export default Resume;
+
 
 
 
