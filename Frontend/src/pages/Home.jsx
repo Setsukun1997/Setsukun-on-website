@@ -24,8 +24,7 @@ function Home() {
   }}
 >
   ออกจากระบบ
-</button>
-    
+</button>  
 <div style={{ padding: '2rem', textAlign: 'center', position: 'relative' }}>
     <button>ออกจากระบบ</button>
   <div className="home-container">
