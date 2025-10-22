@@ -54,7 +54,6 @@ function Resume() {
       </footer>
     </div>
   );
-}
 };
 
 export default Resume;
