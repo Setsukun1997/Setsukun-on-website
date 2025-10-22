@@ -2,7 +2,6 @@ import { Routes, Route } from 'react-router-dom';
 import Login from './pages/Login';
 import Home from './pages/Home';
 import Register from './pages/Register';
-import Login from './pages/Login';
 import Journey from './pages/Journey';
 import Contact from './pages/Contact';
 import Resume from './pages/Resume';
