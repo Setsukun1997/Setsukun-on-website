@@ -6,18 +6,17 @@ function Home() {
   const [showPopup, setShowPopup] = useState(false);
 
   return (
-     const buttonStyle = {
-    display: 'flex',
-    alignItems: 'center',
-    padding: '10px 16px',
-    margin: '8px',
-    borderRadius: '8px',
-    border: 'none',
-    cursor: 'pointer',
-    fontSize: '16px',
-    color: 'white'
-  const { ButtonStyle } = styles;
-
+     const ButtonStyle = {
+  position: 'absolute',
+  top: '20px',
+  left: '20px',
+  backgroundColor: '#007bff',
+  color: '#fff',
+  border: 'none',
+  borderRadius: '8px',
+  padding: '10px 20px',
+  cursor: 'pointer'
+};
 <button
   onClick={() => window.location.href = '/'}
   style={{
