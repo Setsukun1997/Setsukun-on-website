@@ -21,7 +21,7 @@ function Resume() {
 
       <section className="section">
         <h2>เกี่ยวกับฉัน</h2>
-        <img src="/myprofile.jpg" alt="รูปโปรไฟล์" />
+        <img src="/myprofile.jpg" alt="รูปโปรไฟล์" className="profile-img/>
         <p>
           ฉันเป็นนักพัฒนาเว็บไซต์ที่มีความสามารถในการใช้ HTML, CSS, JavaScript และสามารถ deploy เว็บไซต์ผ่าน GitHub Pages ได้
           มีความรู้ด้าน Responsive Design และ Microsoft Office
@@ -75,4 +75,5 @@ function Resume() {
 }
 
 export default Resume;
+
 
