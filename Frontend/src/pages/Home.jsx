@@ -5,7 +5,8 @@ import { Link } from 'react-router-dom';
 function Home() {
   const [showPopup, setShowPopup] = useState(false);
 
-  const buttonStyle = {
+  return (
+     const buttonStyle = {
     display: 'flex',
     alignItems: 'center',
     padding: '10px 16px',
@@ -34,8 +35,6 @@ function Home() {
 >
   ออกจากระบบ
 </button>
-
-  return (
 <div style={{ padding: '2rem', textAlign: 'center', position: 'relative' }}>
     <button>ออกจากระบบ</button>
   <div className="home-container">
