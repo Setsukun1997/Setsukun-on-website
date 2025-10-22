@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-
+import './Home.css';
 function Home() {
   const [showPopup, setShowPopup] = useState(false);
 
@@ -27,7 +27,7 @@ function Home() {
           onClick={() => window.open('https://www.facebook.com/SetsukinoZRaisenz', '_blank', 'noopener,noreferrer')}
           style={{ ...buttonStyle, backgroundColor: '#1877F2' }}
         >
-          <img src="/facebook.png" alt="Facebook" style={{ height: '24px', marginRight: '8px' }} />
+          <img src="/LogoFacebook.png" alt="Facebook" style={{ height: '24px', marginRight: '8px' }} />
           Facebook
         </button>
 
@@ -51,7 +51,7 @@ function Home() {
           onClick={() => setShowPopup(true)}
           style={{ ...buttonStyle, backgroundColor: '#00C300' }}
         >
-          <img src="/line.png" alt="LINE" style={{ height: '24px', marginRight: '8px' }} />
+          <img src="/iconLine.png" alt="LINE" style={{ height: '24px', marginRight: '8px' }} />
           LINE
         </button>
 
