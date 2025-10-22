@@ -37,7 +37,7 @@ function Home() {
 
   return (
 <div style={{ padding: '2rem', textAlign: 'center', position: 'relative' }}>
-    <button ...>ออกจากระบบ</button>
+    <buttonออกจากระบบ</button>
   <div className="home-container">
       <h1>ยินดีต้อนรับสู่ Setsukun Website 🎉</h1>
       <p>เชื่อมต่อกับฉันผ่านช่องทางต่าง ๆ ด้านล่างนี้</p>
