@@ -25,17 +25,7 @@ function Home() {
 >
   ออกจากระบบ
 </button>
-    const ButtonStyle = {
-  position: 'absolute',
-  top: '20px',
-  left: '20px',
-  backgroundColor: '#007bff',
-  color: '#fff',
-  border: 'none',
-  borderRadius: '8px',
-  padding: '10px 20px',
-  cursor: 'pointer'
-};
+    
 <div style={{ padding: '2rem', textAlign: 'center', position: 'relative' }}>
     <button>ออกจากระบบ</button>
   <div className="home-container">
