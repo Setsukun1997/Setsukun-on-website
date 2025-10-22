@@ -17,7 +17,7 @@ function Home() {
     fontSize: '16px',
     color: 'white'
   const { ButtonStyle } = styles;
-};
+
 <button
   onClick={() => window.location.href = '/'}
   style={{
