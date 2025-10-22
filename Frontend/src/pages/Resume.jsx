@@ -1,82 +1,113 @@
 import React from 'react';
-import './Resume.css';
 import { useNavigate } from 'react-router-dom';
-
 function Resume() {
-  const navigate = useNavigate();
-
   return (
-    <div className="container">
-      <header className="header">
-        <h1>สุทัศน์ ปัญญาสิริสุนทร</h1>
-        <h2>Suthat Punyasirisoonthorn</h2>
-        <p>Junior Web Developer | YouTuber</p>
-        <p className="contact">
-          📧 tety12308@hotmail.com | 📞 093-910-6716 | 💻{' '}
-          <a href="https://github.com/Setsukun1997" target="_blank" rel="noopener noreferrer">
-            GitHub
-          </a>
-        </p>
+    <div className="resume-container" style={styles.container}>
+      <header style={styles.header}>
+        <img
+          src="/profile.jpg"
+          alt="รูปโปรไฟล์"
+          style={styles.profileImage}
+        />
+        <h1 style={styles.name}>Suthat Setsukun</h1>
+        <p style={styles.title}>Full Stack Developer</p>
       </header>
 
-      <section className="profile-section">
-        <h2>เกี่ยวกับฉัน</h2>
-        <img src="/myprofile.jpg" alt="รูปโปรไฟล์" className="profile-img/>
-        <p>
-          ฉันเป็นนักพัฒนาเว็บไซต์ที่มีความสามารถในการใช้ HTML, CSS, JavaScript และสามารถ deploy เว็บไซต์ผ่าน GitHub Pages ได้
-          มีความรู้ด้าน Responsive Design และ Microsoft Office
-        </p>
-      </section>
-
-      <div className="profile-section">
-        <h2>ทักษะ</h2>
-        <div className="skills">
-          <span>HTML</span>
-          <span>CSS</span>
-          <span>JavaScript</span>
-          <span>GitHub Pages</span>
-          <span>Responsive Design</span>
-          <span>Microsoft Office</span>
-          <span>Node.js</span>
-          <span>PHP</span>
-        </div>
-      </section>
-
-      <section className="section">
-        <h2>ประสบการณ์</h2>
-        <ul>
-          <li>สร้างเว็บไซต์ด้วย HTML และ CSS</li>
-          <li>ใช้ GitHub Pages ในการเผยแพร่เว็บไซต์</li>
-          <li>ออกแบบเว็บไซต์ให้รองรับทุกอุปกรณ์</li>
+      <section style={styles.section}>
+        <h2 style={styles.sectionTitle}>ข้อมูลติดต่อ</h2>
+        <ul style={styles.list}>
+          <li>📍 กรุงเทพฯ, ประเทศไทย</li>
+          <li>📧 suthat@example.com</li>
+          <li>🌐 github.com/Setsukun1997</li>
         </ul>
       </section>
 
-      <section className="section">
-        <h2>การศึกษา</h2>
-        <ul>
-          <li>ประกาศนียบัตรวิชาชีพขั้นสูง  สาขาคอมพิวเตอร์ธุรกิจ (GPA 3.08) </li>
-          <li>หลักสูตรออนไลน์ด้าน Web Development</li>
+      <section style={styles.section}>
+        <h2 style={styles.sectionTitle}>ทักษะหลัก</h2>
+        <ul style={styles.list}>
+          <li>React + Vite, Node.js, MongoDB</li>
+          <li>Deploy บน Render, GitHub Actions</li>
+          <li>แก้ไข error build, .env, routing</li>
+          <li>ทำงานจากมือถือด้วย Acode + Termux</li>
         </ul>
       </section>
 
-      <section className="section">
-        <h2>ประวัติการทำงาน</h2>
-        <ul>
-          <li> MK Restuarant 2016 - 2025 (January - June) : Kitchen Staff </li>
-          <li> Gemini Creation 2025 (At Present) : Data Entry Staff</li>
+      <section style={styles.section}>
+        <h2 style={styles.sectionTitle}>ประสบการณ์ล่าสุด</h2>
+        <ul style={styles.list}>
+          <li>สร้างระบบ login/register เชื่อม backend จริง</li>
+          <li>แก้ไข JSX, import conflict, deploy fail</li>
+          <li>ออกแบบหน้า Resume ให้ดาวน์โหลดได้</li>
         </ul>
       </section>
 
-      <div className="back-btn">
-        <button onClick={() => navigate('/')}>กลับหน้าหลัก</button>
-      </div>
+      <section style={styles.section}>
+        <h2 style={styles.sectionTitle}>เป้าหมาย</h2>
+        <p>สร้างเว็บไซต์ที่เล่าเรื่องการเป็น dev จากมือถือ และสร้างแรงบันดาลใจให้คนอื่นเริ่มต้นได้แบบไม่ต้องรอเครื่องแรง</p>
+      </section>
+
+      <footer style={styles.footer}>
+        <button onClick={() => window.location.href = '/'} style={styles.backButton}>
+          ← กลับหน้าแรก
+        </button>
+      </footer>
     </div>
   );
 }
 
+const styles = {
+  container: {
+    maxWidth: '800px',
+    margin: 'auto',
+    padding: '2rem',
+    fontFamily: 'sans-serif',
+    lineHeight: 1.6,
+    backgroundColor: '#fff',
+    color: '#333',
+  },
+  header: {
+    textAlign: 'center',
+    marginBottom: '2rem',
+  },
+  profileImage: {
+    width: '120px',
+    borderRadius: '50%',
+    marginBottom: '1rem',
+  },
+  name: {
+    fontSize: '2rem',
+    margin: 0,
+  },
+  title: {
+    fontSize: '1.2rem',
+    color: '#666',
+  },
+  section: {
+    marginBottom: '2rem',
+  },
+  sectionTitle: {
+    fontSize: '1.5rem',
+    borderBottom: '2px solid #eee',
+    paddingBottom: '0.5rem',
+    marginBottom: '1rem',
+  },
+  list: {
+    listStyle: 'none',
+    paddingLeft: 0,
+  },
+  footer: {
+    textAlign: 'center',
+    marginTop: '3rem',
+  },
+  backButton: {
+    padding: '10px 20px',
+    fontSize: '1rem',
+    backgroundColor: '#007bff',
+    color: '#fff',
+    border: 'none',
+    borderRadius: '8px',
+    cursor: 'pointer',
+  }
+};
+
 export default Resume;
-
-
-
-
-
