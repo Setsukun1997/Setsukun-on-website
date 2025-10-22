@@ -5,7 +5,7 @@ function Resume() {
     <div className="resume-container" style={styles.container}>
       <header style={styles.header}>
         <img
-          src="/profile.jpg"
+          src="/myprofile.jpg"
           alt="รูปโปรไฟล์"
           style={styles.profileImage}
         />
@@ -111,3 +111,4 @@ const styles = {
 };
 
 export default Resume;
+
