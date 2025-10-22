@@ -16,8 +16,28 @@ function Home() {
     fontSize: '16px',
     color: 'white'
   };
+<button
+  onClick={() => window.location.href = '/'}
+  style={{
+    position: 'absolute',
+    top: '20px',
+    right: '20px',
+    padding: '8px 16px',
+    fontSize: '14px',
+    backgroundColor: '#f44336',
+    color: 'white',
+    border: 'none',
+    borderRadius: '6px',
+    cursor: 'pointer',
+    zIndex: 1000
+  }}
+>
+  ออกจากระบบ
+</button>
 
   return (
+<div style={{ padding: '2rem', textAlign: 'center', position: 'relative' }}>
+    <button ...>ออกจากระบบ</button>
   <div className="home-container">
       <h1>ยินดีต้อนรับสู่ Setsukun Website 🎉</h1>
       <p>เชื่อมต่อกับฉันผ่านช่องทางต่าง ๆ ด้านล่างนี้</p>
