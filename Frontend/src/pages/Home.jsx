@@ -5,21 +5,7 @@ import { Link } from 'react-router-dom';
 function Home() {
 const [showPopup, setShowPopup] = useState(false);
   return (
-  <button style={{
-    position: 'absolute',
-    top: '20px',
-    right: '20px',
-    backgroundColor: '#dc3545',
-    color: '#fff',
-    border: 'none',
-    borderRadius: '8px',
-    padding: '10px 20px',
-    cursor: 'pointer'
-  }}
-  onClick={handleLogout}
->
-  ออกจากระบบ
-</button>
+ 
   <div className="home-container">
       <h1>ยินดีต้อนรับสู่ Setsukun Website 🎉</h1>
       <p>เชื่อมต่อกับฉันผ่านช่องทางต่าง ๆ ด้านล่างนี้</p>
