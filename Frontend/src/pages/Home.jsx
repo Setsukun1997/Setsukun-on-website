@@ -5,8 +5,7 @@ import { Link } from 'react-router-dom';
 function Home() {
 const [showPopup, setShowPopup] = useState(false);
   return (
-  <button
-  style={{
+  <button style={{
     position: 'absolute',
     top: '20px',
     right: '20px',
