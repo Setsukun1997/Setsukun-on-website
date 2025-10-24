@@ -53,7 +53,7 @@ function Home() {
             <img src="/LogoFacebook.png" alt="Facebook" style={{ height: '24px', marginRight: '8px' }} />
           </button>
           <button
-            onClick={() => window.open('https://www.youtube.com/@Setsukinokun', '_blank', 'noopener,noreferrer')}
+            onClick={() => window.open('https://youtube.com/@setsukinoraisenz4199?si=L6b-_GP-4YS498Ar', '_blank', 'noopener,noreferrer')}
             style={{ ...buttonStyle, backgroundColor: '#FF0000' }}
           >
             <img src="/logoyoutube.png" alt="YouTube" style={{ height: '24px', marginRight: '8px' }} />
@@ -73,7 +73,7 @@ function Home() {
             <img src="/iconLine.png" alt="LINE" style={{ height: '24px', marginRight: '8px' }} />
           </button>
 
-          <Link to="/resume">
+          <Link to="./resume">
             <button style={{ ...buttonStyle, backgroundColor: '#6C63FF' }}>
               <img src="/resume.png" alt="Resume" style={{ height: '24px', marginRight: '8px' }} />
             </button>
