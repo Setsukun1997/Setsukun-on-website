@@ -15,8 +15,7 @@ function Home(
   alignItems: 'center',
   boxShadow: '0 2px 6px rgba(0,0,0,0.2)',
 };
-) {
-const [showPopup, setShowPopup] = useState(false);
+) 
   return (
     
   <div className="home-container">
@@ -59,6 +58,7 @@ const [showPopup, setShowPopup] = useState(false);
           </button>
         </Link>
       </div>
+const [showPopup, setShowPopup] = useState(false);
 
       {showPopup && (
         <div
