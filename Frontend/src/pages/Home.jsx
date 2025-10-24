@@ -30,7 +30,6 @@ const [showPopup, setShowPopup] = useState(false);
           style={{ ...buttonStyle, backgroundColor: '#1877F2' }}
         >
           <img src="/LogoFacebook.png" alt="Facebook" style={{ height: '24px', marginRight: '8px' }} />
-          Facebook
         </button>
 
         <button
@@ -38,7 +37,6 @@ const [showPopup, setShowPopup] = useState(false);
           style={{ ...buttonStyle, backgroundColor: '#FF0000' }}
         >
           <img src="/logoyoutube.png" alt="YouTube" style={{ height: '24px', marginRight: '8px' }} />
-          YouTube
         </button>
 
         <button
@@ -46,7 +44,6 @@ const [showPopup, setShowPopup] = useState(false);
           style={{ ...buttonStyle, backgroundColor: '#333' }}
         >
           <img src="/github.png" alt="GitHub" style={{ height: '24px', marginRight: '8px' }} />
-          GitHub
         </button>
 
         <button
@@ -54,13 +51,11 @@ const [showPopup, setShowPopup] = useState(false);
           style={{ ...buttonStyle, backgroundColor: '#00C300' }}
         >
           <img src="/iconLine.png" alt="LINE" style={{ height: '24px', marginRight: '8px' }} />
-          LINE
         </button>
 
         <Link to="/resume">
           <button style={{ ...buttonStyle, backgroundColor: '#6C63FF' }}>
             <img src="/resume.png" alt="Resume" style={{ height: '24px', marginRight: '8px' }} />
-            Resume
           </button>
         </Link>
       </div>
