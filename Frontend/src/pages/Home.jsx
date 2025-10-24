@@ -39,13 +39,11 @@ export default function Home() {
         </a>
 
         <button onClick={handlePopup} style={{ ...buttonStyle, backgroundColor: '#00C300' }}>
-          PopUp Line
-        </button>
+          PopUp Line </button>
 
         <a href="./resume" target="_blank" rel="noopener noreferrer">
          <button style={buttonStyle}>
   <img src="/resume.png" alt="Facebook" style={{ height: '24px' }} />
-</button>
 Resume</button>
         </a>
       </div>
