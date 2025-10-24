@@ -1,18 +1,70 @@
 import '.pages/Home.css';
-import React from 'react';
+import React, { useState } from 'react';
 
 export default function Home() {
+  const [showPopup, setShowPopup] = useState(false);
+
+  const buttonStyle = {
+    color: '#fff',
+    border: 'none',
+    padding: '0.6rem 1.2rem',
+    margin: '0.5rem',
+    borderRadius: '8px',
+    cursor: 'pointer',
+    fontSize: '1rem',
+    boxShadow: '0 2px 6px rgba(0,0,0,0.2)',
+    transition: 'transform 0.2s',
+  };
+
+  const handlePopup = () => setShowPopup(!showPopup);
+
   return (
-    <div className="home-container" style={{ padding: '2rem', textAlign: 'center' }}>
+    <div style={{ padding: '2rem', textAlign: 'center', background: 'linear-gradient(to bottom right, #c2f0f7, #d2f7c2)', minHeight: '100vh' }}>
       <h1>ยินดีต้อนรับสู่ Setsukun Website 🎉</h1>
-      <p>คลิกที่ลิงก์ด้านล่างเพื่อเข้าสู่เว็บไซต์ของเรา :) มีความสุขกับการท่องเว็บ!</p>
+      <p>คลิกที่ปุ่มด้านล่างเพื่อเข้าชมผลงานและช่องทางติดต่อของเรา :)</p>
+
+      <div style={{ marginTop: '2rem' }}>
+        <a href="https://www.facebook.com/SetsukinoZRaisenz" target="_blank" rel="noopener noreferrer">
+          <button style={{ ...buttonStyle, backgroundColor: '#1877F2' }}>Facebook</button>
+        </a>
+
+        <a href="https://www.youtube.com/@Setsukinokun" target="_blank" rel="noopener noreferrer">
+          <button style={{ ...buttonStyle, backgroundColor: '#FF0000' }}>YouTube</button>
+        </a>
+
+        <button onClick={handlePopup} style={{ ...buttonStyle, backgroundColor: '#00C300' }}>
+          PopUp Line
+        </button>
+
+        <a href="/resume" target="_blank" rel="noopener noreferrer">
+          <button style={{ ...buttonStyle, backgroundColor: '#444' }}>Resume</button>
+        </a>
+      </div>
+
+      {showPopup && (
+        <div style={{
+          marginTop: '2rem',
+          padding: '1rem',
+          backgroundColor: '#fffbe6',
+          border: '1px solid #ccc',
+          borderRadius: '10px',
+          display: 'inline-block',
+          maxWidth: '400px'
+        }}>
+          <h2>📱 ติดต่อผ่าน LINE</h2>
+          <p>แสกน QR Code หรือคลิกลิงก์ด้านล่างเพื่อแอดไลน์</p>
+          <a href="https://line.me/ti/p/~setsukun1997" target="_blank" rel="noopener noreferrer">
+            👉 line.me/ti/p/~setsukun1997
+          </a>
+        </div>
+      )}
 
       <div style={{
-        marginTop: '2rem',
+        marginTop: '3rem',
         padding: '1rem',
-        border: '1px solid #ccc',
-        borderRadius: '8px',
-        backgroundColor: '#f9f9f9',
+        backgroundColor: '#fff',
+        borderRadius: '10px',
+        boxShadow: '0 2px 8px rgba(0,0,0,0.1)',
         display: 'inline-block'
       }}>
         <h2>🌟 ผลงานของเรา</h2>
