@@ -1,4 +1,4 @@
-import './Home.css';
+2import './Home.css';
 import React, { useState } from 'react';
 
 export default function Home() {
@@ -57,7 +57,7 @@ export default function Home() {
         </Link>
       </div>
 
-      {showPopup && (
+      {showPopup && 
         <div
           className="popup"
           style={{
