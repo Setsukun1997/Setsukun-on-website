@@ -2,7 +2,7 @@ import './Home.css';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-function Home() {
+export default function Home() {
 const [showPopup, setShowPopup] = useState(false);
   return (
  
