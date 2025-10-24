@@ -98,5 +98,5 @@ const [showPopup, setShowPopup] = useState(false);
     </div>
   );
 }
-
+}
 export default Home;
