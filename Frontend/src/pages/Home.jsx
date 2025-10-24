@@ -1,4 +1,4 @@
-import '.pages/Home.css';
+import './Home.css';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
