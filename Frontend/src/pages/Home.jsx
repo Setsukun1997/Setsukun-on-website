@@ -2,9 +2,23 @@ import './Home.css';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-function Home() {
+function Home(
+  const buttonStyle = {
+  color: '#fff',
+  border: 'none',
+  padding: '0.6rem 1.2rem',
+  margin: '0.5rem',
+  borderRadius: '8px',
+  cursor: 'pointer',
+  fontSize: '1rem',
+  display: 'flex',
+  alignItems: 'center',
+  boxShadow: '0 2px 6px rgba(0,0,0,0.2)',
+};
+) {
 const [showPopup, setShowPopup] = useState(false);
   return (
+    
   <button style={{
     position: 'absolute',
     top: '20px',
