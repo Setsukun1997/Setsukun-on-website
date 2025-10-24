@@ -36,7 +36,7 @@ export default function Home() {
           PopUp Line
         </button>
 
-        <a href="/resume" target="_blank" rel="noopener noreferrer">
+        <a href="./resume" target="_blank" rel="noopener noreferrer">
           <button style={{ ...buttonStyle, backgroundColor: '#444' }}>Resume</button>
         </a>
       </div>
