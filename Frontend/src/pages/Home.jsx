@@ -25,11 +25,17 @@ export default function Home() {
 
       <div style={{ marginTop: '2rem' }}>
         <a href="https://www.facebook.com/SetsukinoZRaisenz" target="_blank" rel="noopener noreferrer">
-          <button style={{ ...buttonStyle, backgroundColor: '#1877F2' }}>Facebook</button>
+          <button style={buttonStyle}>
+  <img src="/LogoFacebook.png" alt="Facebook" style={{ height: '24px' }} />
+</button>
+
         </a>
 
         <a href="https://www.youtube.com/@Setsukinokun" target="_blank" rel="noopener noreferrer">
-          <button style={{ ...buttonStyle, backgroundColor: '#FF0000' }}>YouTube</button>
+          <button style={buttonStyle}>
+  <img src="/logoyoutube.png" alt="Facebook" style={{ height: '24px' }} />
+</button>
+
         </a>
 
         <button onClick={handlePopup} style={{ ...buttonStyle, backgroundColor: '#00C300' }}>
@@ -37,7 +43,10 @@ export default function Home() {
         </button>
 
         <a href="./resume" target="_blank" rel="noopener noreferrer">
-          <button style={{ ...buttonStyle, backgroundColor: '#444' }}>Resume</button>
+         <button style={buttonStyle}>
+  <img src="/resume.png" alt="Facebook" style={{ height: '24px' }} />
+</button>
+Resume</button>
         </a>
       </div>
 
