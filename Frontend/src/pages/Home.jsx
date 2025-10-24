@@ -90,6 +90,7 @@ export default function Home() {
             src="/MyQRCodeLine.jpeg"
             alt="Line QR Code"
             style={{ maxWidth: '90%', maxHeight: '90%', borderRadius: '12px' }}
+>
       </div>
     </div>
   );
