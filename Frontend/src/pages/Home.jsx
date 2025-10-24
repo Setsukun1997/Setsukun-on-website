@@ -57,7 +57,7 @@ export default function Home() {
         </Link>
       </div>
 
-      {showPopup && ()
+      ( showPopup && 
         <div
           className="popup"
           style={{
@@ -92,5 +92,5 @@ export default function Home() {
             style={{ maxWidth: '90%', maxHeight: '90%', borderRadius: '12px' }}
       </div>
     </div>
-  )};
+  );
 }
