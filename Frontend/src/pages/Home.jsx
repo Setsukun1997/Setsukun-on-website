@@ -92,4 +92,3 @@ const [showPopup, setShowPopup] = useState(false);
   );
 }
 
-export default Home;
