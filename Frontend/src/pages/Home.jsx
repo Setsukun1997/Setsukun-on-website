@@ -57,7 +57,7 @@ export default function Home() {
         </Link>
       </div>
 
-      showPopup && (
+      showPopup && ()
         <div
           className="popup"
           style={{
