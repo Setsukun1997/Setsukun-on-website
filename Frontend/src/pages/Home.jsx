@@ -2,8 +2,8 @@ import './Home.css';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-function Home(
-  const buttonStyle = {
+function Home () 
+const buttonStyle = {
   color: '#fff',
   border: 'none',
   padding: '0.6rem 1.2rem',
@@ -15,7 +15,6 @@ function Home(
   alignItems: 'center',
   boxShadow: '0 2px 6px rgba(0,0,0,0.2)',
 };
-) 
   return (
     
   <div className="home-container">
