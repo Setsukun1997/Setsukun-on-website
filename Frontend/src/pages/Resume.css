@@ -1,110 +1,81 @@
-.resume-container  {
-  max-width: 900px;
-  margin: 40px auto;
-  padding: 20px;
+.resume-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
   font-family: 'Segoe UI', sans-serif;
-  background-color: #ffffff;
-  border-radius: 16px;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
-}
-
-.profile-section {
-  display: flex;
-  align-items: center;
-  gap: 24px;
-  flex-wrap: wrap;
-  margin-bottom: 40px;
-}
-
-.profile-img {
-  width: 180px;
-  height: 180px;
-  border-radius: 50%;
-  object-fit: cover;
-  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
-}
-
-.profile-text {
-  flex: 1;
-  min-width: 250px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
 }
 
 .header {
-  text-align: center;
-  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
 }
 
-.header h1 {
-  font-size: 2.2rem;
-  margin-bottom: 8px;
-  color: #222;
+.profile-img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 3px solid #0077cc;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
 }
 
-.header h2 {
+.name-title {
+  flex: 1;
+}
+
+.name-title h1 {
+  margin: 0;
+  font-size: 2rem;
+  color: #333;
+}
+
+.name-title h2 {
+  margin: 0.5rem 0 0;
   font-size: 1.2rem;
-  margin-bottom: 12px;
   color: #666;
 }
 
-.contact {
-  font-size: 0.95rem;
-  color: #444;
-}
-
 .section {
-  margin-bottom: 30px;
+  margin-bottom: 2rem;
 }
 
-.section h2 {
-  font-size: 1.3rem;
-  margin-bottom: 12px;
-  color: #0055aa;
-  border-bottom: 2px solid #eee;
-  padding-bottom: 6px;
+.section-title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #0077cc;
 }
 
-.section p,
 .section ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.section li {
+  margin-bottom: 0.5rem;
   font-size: 1rem;
-  color: #333;
-  line-height: 1.6;
-}
-
-.section ul {
-  padding-left: 20px;
-}
-
-.skills {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-.skills span {
-  background-color: #e0f0ff;
-  color: #0055aa;
-  padding: 6px 12px;
-  border-radius: 20px;
-  font-size: 0.9rem;
-  font-weight: 500;
+  color: #444;
 }
 
 .back-btn {
   text-align: center;
-  margin-top: 40px;
+  margin-top: 2rem;
 }
 
 .back-btn button {
-  background-color: #0055aa;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 8px;
+  padding: 0.5rem 1rem;
   font-size: 1rem;
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
 }
 
 .back-btn button:hover {
-  background-color: #003f7f;
+  background-color: #005fa3;
 }
