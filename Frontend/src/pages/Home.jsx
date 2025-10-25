@@ -19,7 +19,6 @@ function Home() {
 
   const handleLogout = () => {
     alert('คุณได้ออกจากระบบแล้ว');
-    // หรือ redirect ไปหน้า login ก็ได้
   };
 
   return (
