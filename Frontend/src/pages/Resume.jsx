@@ -22,8 +22,8 @@ function Resume() {
       <section className="section">
         <h2 style={styles.sectionTitle}>ข้อมูลติดต่อ</h2>
         <ul style={styles.list}>
-          <li>📍 กรุงเทพฯ, ประเทศไทย</li>
-          <li>📧 suthat@example.com</li>
+          <li>📍 45/1 หอพักบ้านไทรงาม พระราม 3 ซอย 1 เขตบางคอแหลม กรุงเทพฯ 10120 , ประเทศไทย</li>
+          <li>📧 tety12308@hotmail.com</li>
           <li>🌐 github.com/Setsukun1997</li>
         </ul>
       </section>
@@ -75,6 +75,7 @@ const styles = {
 
 
 export default Resume;
+
 
 
 
