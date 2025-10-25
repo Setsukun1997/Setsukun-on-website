@@ -1,7 +1,12 @@
 import React from 'react';
 import './Resume.css';
 import { useNavigate } from 'react-router-dom';
+import html2pdf from 'html2pdf.js';
 function Resume() {
+  const handleDownload = () => {
+    const element = document.getElementById('resume-content');
+    html2pdf().from(element).save('resume.pdf');
+  };
   return (
     <div className="resume-container" style={styles.container}>
       <header style={styles.header}>
@@ -70,6 +75,7 @@ const styles = {
 
 
 export default Resume;
+
 
 
 
