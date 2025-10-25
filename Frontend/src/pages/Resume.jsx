@@ -19,7 +19,7 @@ function Resume() {
         <p style={styles.title}>Full Stack Developer</p>
       </header>
 
-      <section style={styles.section}>
+      <section className="section">
         <h2 style={styles.sectionTitle}>ข้อมูลติดต่อ</h2>
         <ul style={styles.list}>
           <li>📍 กรุงเทพฯ, ประเทศไทย</li>
@@ -28,7 +28,7 @@ function Resume() {
         </ul>
       </section>
 
-      <section style={styles.section}>
+      <section className="section">
         <h2 style={styles.sectionTitle}>ทักษะหลัก</h2>
         <ul style={styles.list}>
           <li>React + Vite, Node.js, MongoDB</li>
@@ -38,7 +38,7 @@ function Resume() {
         </ul>
       </section>
 
-      <section style={styles.section}>
+      <section className="section">
         <h2 style={styles.sectionTitle}>ประสบการณ์ล่าสุด</h2>
         <ul style={styles.list}>
           <li>สร้างระบบ login/register เชื่อม backend จริง</li>
@@ -47,7 +47,7 @@ function Resume() {
         </ul>
       </section>
 
-      <section style={styles.section}>
+      <section className="section">
         <h2 style={styles.sectionTitle}>เป้าหมาย</h2>
         <p>สร้างเว็บไซต์ที่เล่าเรื่องการเป็น dev จากมือถือ และสร้างแรงบันดาลใจให้คนอื่นเริ่มต้นได้แบบไม่ต้องรอเครื่องแรง</p>
       </section>
@@ -75,6 +75,7 @@ const styles = {
 
 
 export default Resume;
+
 
 
 
