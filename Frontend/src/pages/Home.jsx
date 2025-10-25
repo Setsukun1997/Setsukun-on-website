@@ -73,7 +73,7 @@ function Home() {
             <img src="/iconLine.png" alt="LINE" style={{ height: '24px', marginRight: '8px' }} />
           </button>
 
-          <Link to="./Resume">
+          <Link to="/resume">
             <button style={{ ...buttonStyle, backgroundColor: '#6C63FF' }}>
               <img src="/resume.png" alt="Resume" style={{ height: '24px', marginRight: '8px' }} />
             </button>
