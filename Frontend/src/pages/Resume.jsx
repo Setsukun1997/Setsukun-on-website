@@ -55,8 +55,22 @@ function Resume() {
     </div>
   );
 };
+const styles = {
+  container: { padding: '2rem', textAlign: 'center' },
+  header: { marginBottom: '2rem' },
+  profileImage: { width: '120px', borderRadius: '50%' },
+  name: { fontSize: '2rem', margin: '0.5rem 0' },
+  title: { fontSize: '1.2rem', color: '#666' },
+  section: { marginBottom: '2rem' },
+  sectionTitle: { fontSize: '1.5rem', marginBottom: '1rem' },
+  list: { listStyle: 'none', padding: 0 },
+  footer: { marginTop: '2rem' },
+  backButton: { padding: '0.5rem 1rem', fontSize: '1rem' }
+};
+
 
 export default Resume;
+
 
 
 
