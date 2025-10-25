@@ -1,16 +1,19 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
+import Journey from './pages/Journey';
+import Contact from './pages/Contact';
 import Resume from './pages/Resume';
+import Register from './pages/Register';
 
-function App() {
+export default function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/resume" element={<Resume />} />
-      </Routes>
-    </Router>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/journey" element={<Journey />} />
+      <Route path="/contact" element={<Contact />} />
+      <Route path="/resume" element={<Resume />} />
+      <Route path="/register" element={<Register />} />
+      <Route path="*" element={<Home />} />
+    </Routes>
   );
 }
-
-export default App;
