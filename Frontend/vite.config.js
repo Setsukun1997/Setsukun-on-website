@@ -6,9 +6,7 @@ export default defineConfig({
   base: '/',
   build: {
     outDir: 'dist',
-    rollupOptions: {
-      external: ['html2pdf.js']
-    }
+   
   },
   plugins: [
     react(),
