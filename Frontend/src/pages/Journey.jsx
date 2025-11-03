@@ -42,9 +42,11 @@ const Journey = () => {
         </div>
 
         <div className="text-center mt-12">
-          <a href="/" className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-6 rounded">
-            กลับหน้าหลัก
-          </a>
+            <footer className="footer">
+        <button onClick={() => window.location.href = '/'} className="back-btn">
+          ← กลับหน้าแรก
+        </button>
+      </footer>
         </div>
       </div>
     </div>
