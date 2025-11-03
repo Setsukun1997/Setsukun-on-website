@@ -1,5 +1,5 @@
 import React from "react";
-
+import './Journey.css';
 const Journey = () => {
   return (
     <div className="bg-gray-900 text-white min-h-screen py-12 px-6">
