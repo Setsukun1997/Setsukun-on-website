@@ -79,7 +79,7 @@ function Home() {
           </Link>
           <Link to="/Journey">
             <button style={{ ...buttonStyle, backgroundColor: '#6C63FF' }}>
-              <img src="/Journey.jpg" alt="Resume" style={{ height: '24px', marginRight: '8px' }} /> เข้าสุ่การเดืนทางของเราตั้งแต่ 1 จนถึงปัจจุบัน
+              <img src="/Journey.jpg" alt="Journey" style={{ height: '24px', marginRight: '8px' }} /> เข้าสุ่การเดืนทางของเราตั้งแต่ 1 จนถึงปัจจุบัน
             </button>
           </Link>
         </div>
