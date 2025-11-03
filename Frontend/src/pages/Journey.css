@@ -1,0 +1,87 @@
+body {
+  background-color: #f0f4f8;
+  margin: 0;
+  padding: 0;
+}
+
+.resume-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.profile-img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 3px solid #0077cc;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+.name-title {
+  flex: 1;
+}
+
+.name-title h1 {
+  margin: 0;
+  font-size: 2rem;
+  color: #333;
+}
+
+.name-title h2 {
+  margin: 0.5rem 0 0;
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.section {
+  margin-bottom: 2rem;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #0077cc;
+}
+
+.section ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.section li {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  color: #444;
+}
+
+.back-btn {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.back-btn button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.back-btn button:hover {
+  background-color: #005fa3;
+}
