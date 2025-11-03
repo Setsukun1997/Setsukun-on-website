@@ -77,6 +77,11 @@ function Home() {
               <img src="/resume.png" alt="Resume" style={{ height: '24px', marginRight: '8px' }} />
             </button>
           </Link>
+          <Link to="/Journey">
+            <button style={{ ...buttonStyle, backgroundColor: '#6C63FF' }}>
+              <img src="/Journey.jpg" alt="Resume" style={{ height: '24px', marginRight: '8px' }} /> เข้าสุ่การเดืนทางของเราตั้งแต่ 1 จนถึงปัจจุบัน
+            </button>
+          </Link>
         </div>
 
         {showPopup && (
